@@ -1,0 +1,197 @@
+@charset "utf-8";
+/* CSS Document */
+
+        /* Normalize */
+        html { font-family: sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+        body {
+			background-image:url(background.jpg);
+			background-position:top;
+			backface-visibility:visible;
+			background-size:cover;
+			background-repeat:no-repeat;
+			
+			 margin: 0; 
+			 background-color: #FFF; 
+			 }
+        a { color: #4089db } a:focus { outline: thin dotted; } a:active, a:hover {
+	outline: 0;
+	text-align: right;
+	color: #CC3300;
+}
+        strong { font-weight: bold; } small { font-size: 80%; }
+        ul { margin: 0; }
+
+        #header
+        {
+            height: 40px;
+            background: url("header_bg.jpg") 0 0 repeat-x;
+            width: 100%;
+        }
+        .container
+        {
+            padding: 20px;
+            margin: 20px auto 0 auto;
+            font-size: 14px;
+            text-align: center;
+           /* if you need diable background color remove it */
+		    background-color: #EEE; 
+            border: solid 1px #bababa;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+			backface-visibility:visible;
+		
+        }
+
+        small
+        {
+            font-size: 70%;
+            color: #7c7c7c;
+        }
+
+        label
+        {
+            display: block;
+            font-size: 15px;
+            line-height: 20px;
+            margin-bottom: 5px;
+            color: #404040;
+        }
+
+        hr
+        {
+            background-color: #bababa;
+            height: 1px;
+            border: 0;
+        }
+
+        .submit
+        {
+            display: inline-block;
+            height: 35px;
+            line-height: 35px;
+            padding: 0 5px;
+            margin-top: 10px;
+            color: #ffffff;
+            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+            text-decoration: none;
+
+            border: 0;
+
+            background-color: #6bc135;
+            background-image: -moz-linear-gradient(top, #a0e71b, #41af00);
+            background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#a0e71b), to(#41af00));
+            background-image: -webkit-linear-gradient(top, #a0e71b, #41af00);
+            background-image: -o-linear-gradient(top, #a0e71b, #41af00);
+            background-image: linear-gradient(to bottom, #a0e71b, #41af00);
+            background-repeat: repeat-x;
+        }
+
+        .submit:hover
+        {
+            -webkit-box-shadow: inset rgba(192, 234, 53, 0.75) 0 0 10px;
+            -moz-box-shadow: inset rgba(192, 234, 53, 0.75) 0 0 10px;
+            box-shadow: inset rgba(192, 234, 53, 0.75) 0 0 10px;
+        }
+
+        .submit:active
+        {
+            -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05);
+            -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05);
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05);
+        }
+
+        .alert, .err_r
+        {
+            display: block;
+            position: relative;
+            padding: 4px;
+            margin-bottom: 5px;
+            font-size: 12px;
+            color: #930B0D;
+            text-align: left;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+            background-color: #FEBEBE;
+            border: 1px solid #e62b38;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+        }
+
+        .login_banner, .account_management
+        {
+            background-color: #EDFFE7;
+            padding: 10px;
+            border: solid 1px #bababa;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+
+        .account_management
+        {
+            margin-bottom: 10px;
+        }
+
+        @media all and (min-width: 1024px)
+        {
+            .container
+            {
+                width: 600px;
+            }
+        }
+		
+input[type='text'] {    
+	/* You can set width to whatever you like */    
+	width: 200px;    
+	font-family: "Roboto", "Droid Sans", sans-serif;    
+	font-size: 16px;    
+	margin: 0;    
+	padding: 8px 8px 6px 8px;    
+	position: relative;    
+	display: block;    
+	outline: none;    
+	border: none;    
+	background: bottom left linear-gradient(#a9a9a9, #a9a9a9) no-repeat, bottom center linear-gradient(#a9a9a9, #a9a9a9) repeat-x, bottom right linear-gradient(#a9a9a9, #a9a9a9) no-repeat;    
+	background-size: 1px 6px, 1px 1px, 1px 6px; 
+	align:center;
+	text-align:center;
+	} 
+input[type='text']:hover, input[type='text']:focus {    
+	background: bottom left linear-gradient(#0099cc, #0099cc) no-repeat, bottom center linear-gradient(#0099cc, #0099cc) repeat-x, bottom right linear-gradient(#0099cc, #0099cc) no-repeat;    
+	background-size: 1px 6px, 1px 1px, 1px 6px; 
+	align:center;
+	text-align:center;
+	} 
+
+
+
+input[type='password'] {    
+	/* You can set width to whatever you like */    
+	width: 200px;    
+	font-family: "Roboto", "Droid Sans", sans-serif;    
+	font-size: 16px;    
+	margin: 0;    
+	padding: 8px 8px 6px 8px;    
+	position: relative;    
+	display: block;    
+	outline: none;    
+	border: none;    
+	background: bottom left linear-gradient(#a9a9a9, #a9a9a9) no-repeat, bottom center linear-gradient(#a9a9a9, #a9a9a9) repeat-x, bottom right linear-gradient(#a9a9a9, #a9a9a9) no-repeat;    
+	background-size: 1px 6px, 1px 1px, 1px 6px; 
+	align:center;
+	text-align:center;
+	} 
+input[type='password']:hover, input[type='text']:focus {    
+	background: bottom left linear-gradient(#0099cc, #0099cc) no-repeat, bottom center linear-gradient(#0099cc, #0099cc) repeat-x, bottom right linear-gradient(#0099cc, #0099cc) no-repeat;    
+	background-size: 1px 6px, 1px 1px, 1px 6px;
+	align:center;
+	text-align:center;
+	 } 
+
+.usernamex {
+	text-align: right;
+}
+
+
+    </STYLE>
